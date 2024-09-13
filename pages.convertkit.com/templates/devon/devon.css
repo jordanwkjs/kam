@@ -1,0 +1,226 @@
+.formkit-page {
+    font-family: var(--body-font-family);
+    line-height: 1.5;
+    position: relative;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+h1,
+h2 {
+    line-height: inherit;
+    margin: inherit;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+.formkit-wrapper {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.formkit-bg-color,
+.formkit-bg-image {
+    height: 100%;
+    left: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.formkit-bg-image {
+    background-position: center center;
+    background-size: cover;
+}
+
+.formkit-container {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.formkit-footer-container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 45px 50px 50px;
+    text-align: center;
+}
+
+.formkit-image img {
+    max-height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+.formkit-content-container {
+    padding: 45px 50px 50px;
+}
+
+.formkit-heading {
+    font-family: var(--headings-font-family);
+    font-size: 34px;
+}
+
+.formkit-content {
+    font-size: 21px;
+    margin-bottom: 36px;
+}
+
+.formkit-collection-container,
+.formkit-footer-container {
+    font-size: 18px;
+}
+
+.formkit-collection-container .link-collection {
+    gap: 1rem !important;
+}
+
+.formkit-collection-container .link-collection a {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.formkit-dialog-button {
+    border-style: solid;
+    cursor: pointer;
+    font-family: var(--body-font-family);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    min-height: 83px;
+}
+
+.formkit-dialog-button span {
+    border-radius: inherit;
+    display: block;
+    padding: 26px 1rem;
+}
+
+.formkit-dialog-button:hover span {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.formkit-dialog-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.formkit-modal-container {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.formkit-dialog {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 28px 36px;
+}
+
+.formkit-dialog .formkit-heading {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.formkit-modal-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formkit-field {
+    margin-bottom: 12px;
+}
+
+.formkit-input {
+    border-radius: 0;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+.formkit-field .formkit-select {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.formkit-checkboxes {
+    background: inherit !important;
+    border: inherit !important;
+}
+
+.formkit-submit {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.formkit-submit span {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.formkit-disclaimer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.formkit-modal__close {
+    background: none;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 2rem;
+}
+
+.formkit-modal__close svg {
+    height: 100%;
+    width: 100%;
+}
+
+.formkit-powered-by-convertkit-container {
+    bottom: 0;
+    margin-bottom: 35px;
+    position: absolute;
+}
+
+@media screen and (min-width: 501px) {
+    .formkit-image img {
+        border-top-left-radius: var(--container-border-radius);
+        border-top-right-radius: var(--container-border-radius);
+    }
+    .formkit-dialog {
+        border-radius: var(--container-border-radius);
+    }
+    .formkit-wrapper {
+        padding-top: 120px;
+    }
+}
